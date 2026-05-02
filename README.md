@@ -16,7 +16,7 @@ The player picks an internet persona, competes against an AI rival called `The A
 - localStorage save system
 - Secure server-side `/api/generate` OpenAI route with fallback data
 
-## What’s In The MVP
+## What's In The MVP
 
 - Cinematic landing page
 - Persona category selection
