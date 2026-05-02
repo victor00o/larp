@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow Market</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Shadow Market</p>
+          <h1>Residential market reality for Singapore, not just listing snapshots.</h1>
+          <p class="hero-text">
+            Analyze either a private residential listing or an HDB resale flat with source-aware
+            retrieval, duplicate/relist heuristics, comparable pricing context, and an inspectable
+            evidence trail.
+          </p>
+          <div class="hero-tags">
+            <span class="hero-tag">Private Residential</span>
+            <span class="hero-tag">HDB Resale</span>
+            <span class="hero-tag">Mock + Live</span>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="hero-stat">
+            <span>Core output</span>
+            <strong>Pricing verdict</strong>
+            <p>Backed by comparables, relist clues, and visible sources.</p>
+          </div>
+          <div class="hero-stat">
+            <span>Demo mode</span>
+            <strong>Reliable mock flow</strong>
+            <p>Strong private and HDB scenarios for hackathon demos.</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="control-panel">
+          <div class="panel-header">
+            <h2>Run Analysis</h2>
+            <p>Give the agent a listing or launch a demo path for private residential or HDB resale.</p>
+          </div>
+
+          <form id="analyze-form" class="control-form">
+            <label class="field">
+              <span>Mode</span>
+              <select id="mode" name="mode">
+                <option value="mock">mock</option>
+                <option value="live">live</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Property Type Override</span>
+              <select id="propertyType" name="propertyType">
+                <option value="auto">auto</option>
+                <option value="private_residential">private_residential</option>
+                <option value="hdb">hdb</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Mock Scenario</span>
+              <select id="mockScenarioId" name="mockScenarioId"></select>
+            </label>
+
+            <label class="field">
+              <span>Listing URL or Search</span>
+              <textarea
+                id="input"
+                name="input"
+                rows="5"
+                placeholder="https://www.propertyguru.com.sg/... or 211 Bishan Street 23 4 ROOM"
+              ></textarea>
+            </label>
+
+            <button id="analyze-button" type="submit" class="primary-button">Analyze listing</button>
+          </form>
+
+          <section class="demo-strip">
+            <div class="mini-label">One-click sample flows</div>
+            <div class="demo-cards">
+              <button type="button" class="demo-card" data-scenario="private-orchard-condo">
+                <span class="demo-card-type">Private Residential</span>
+                <strong>Orchard condo relist</strong>
+                <p>Shows project-name matching, duplicate evidence, and URA-oriented pricing context.</p>
+              </button>
+              <button type="button" class="demo-card" data-scenario="private-queenstown-overpriced">
+                <span class="demo-card-type">Private Residential</span>
+                <strong>Overpriced stale listing</strong>
+                <p>Shows cross-site staleness, pricing friction, and a stronger price-cut recommendation.</p>
+              </button>
+              <button type="button" class="demo-card" data-scenario="hdb-bishan-4rm">
+                <span class="demo-card-type">HDB Resale</span>
+                <strong>Bishan 4-room check</strong>
+                <p>Shows block/flat-type matching, HDB resale context, and inspectable relist signals.</p>
+              </button>
+              <button type="button" class="demo-card" data-scenario="hdb-punggol-attractive">
+                <span class="demo-card-type">HDB Resale</span>
+                <strong>Attractive hold-price case</strong>
+                <p>Shows a healthier listing with supportive comparables and less need for price reduction.</p>
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <section class="results-panel">
+          <div class="panel-header results-header">
+            <div>
+              <h2>Analysis Output</h2>
+              <p id="status-line">Ready to analyze a listing or launch a guided sample demo.</p>
+            </div>
+            <div class="system-pill">Private + HDB coverage</div>
+          </div>
+
+          <div id="error-banner" class="error-banner hidden"></div>
+
+          <section class="panel-block">
+            <div class="block-header">
+              <h3>Agent Trace</h3>
+              <p>Watch the property agent classify, retrieve, compare, and explain its verdict.</p>
+            </div>
+            <div id="trace" class="trace-grid"></div>
+          </section>
+
+          <section id="result" class="result-surface empty-state">
+            <div class="empty-copy">
+              <div class="empty-badge">Autonomous property intelligence</div>
+              <h3>Paste a listing or launch a sample scenario</h3>
+              <p>Shadow Market will classify the property, gather source-aware evidence, search for likely relists, compare PSF context, and generate a visible verdict trail.</p>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <template id="trace-item-template">
+      <article class="trace-card">
+        <div class="trace-top">
+          <strong class="trace-step"></strong>
+          <span class="trace-status"></span>
+        </div>
+        <p class="trace-message"></p>
+      </article>
+    </template>
+
+    <script src="/runtime-config.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

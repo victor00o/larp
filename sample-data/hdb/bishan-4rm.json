@@ -1,0 +1,80 @@
+{
+  "id": "hdb-bishan-4rm",
+  "label": "HDB resale: Bishan 4-room price check",
+  "property_type": "hdb",
+  "listing": {
+    "url": "https://mock.shadowmarket.sg/hdb/bishan-4rm-211",
+    "portal": "PropertyGuru",
+    "property_type": "hdb",
+    "project_name": "",
+    "address_or_block": "211 Bishan Street 23",
+    "location": "Bishan",
+    "district_or_town": "Bishan",
+    "price": 798000,
+    "currency": "SGD",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area_sqft": 1001,
+    "floor_level": "10 to 12",
+    "flat_type": "4 ROOM",
+    "lease_commence_year": 1989,
+    "description": "Move-in ready 4-room flat near MRT with upgraded bathrooms and unblocked view.",
+    "agent_name": "Jasmine Lim",
+    "image_urls": [
+      "https://images.shadowmarket.sg/bishan-1.jpg",
+      "https://images.shadowmarket.sg/bishan-2.jpg"
+    ]
+  },
+  "duplicates": [
+    {
+      "url": "https://mock.shadowmarket.sg/hdb/bishan-4rm-relist-1",
+      "portal": "99.co",
+      "price": 808000,
+      "area_sqft": 1001,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agent_name": "Jasmine Lim",
+      "image_urls": ["https://images.shadowmarket.sg/bishan-2.jpg"],
+      "listed_at": "2026-02-20",
+      "project_name": "",
+      "address_or_block": "Blk 211 Bishan St 23"
+    }
+  ],
+  "comparables": [
+    {
+      "url": "public://data-gov-sg/hdb/211-bishan-23-4rm-1",
+      "project_name_or_block": "211 Bishan Street 23",
+      "property_type": "hdb",
+      "price": 775000,
+      "area_sqft": 1001,
+      "psf": 774,
+      "match_type": "same_block"
+    },
+    {
+      "url": "public://data-gov-sg/hdb/bishan-23-4rm-2",
+      "project_name_or_block": "Bishan Street 23",
+      "property_type": "hdb",
+      "price": 782000,
+      "area_sqft": 990,
+      "psf": 790,
+      "match_type": "similar_layout"
+    },
+    {
+      "url": "public://data-gov-sg/hdb/bishan-24-4rm-3",
+      "project_name_or_block": "Bishan Street 24",
+      "property_type": "hdb",
+      "price": 768000,
+      "area_sqft": 1001,
+      "psf": 767,
+      "match_type": "nearby"
+    }
+  ],
+  "source_summary": {
+    "listing_sources": ["PropertyGuru", "99.co"],
+    "public_data_sources": ["data.gov.sg HDB resale references"],
+    "notes": [
+      "Mock scenario keeps HDB data sourcing separate from URA.",
+      "Comparable logic prioritizes same block and same flat type."
+    ]
+  }
+}

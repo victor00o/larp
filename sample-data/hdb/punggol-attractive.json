@@ -1,0 +1,81 @@
+{
+  "id": "hdb-punggol-attractive",
+  "label": "HDB resale: attractive listing with hold recommendation",
+  "property_type": "hdb",
+  "listing": {
+    "url": "https://mock.shadowmarket.sg/hdb/punggol-attractive-172c",
+    "portal": "99.co",
+    "property_type": "hdb",
+    "project_name": "",
+    "address_or_block": "172C Edgedale Plains",
+    "location": "Punggol",
+    "district_or_town": "Punggol",
+    "price": 618000,
+    "currency": "SGD",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area_sqft": 1001,
+    "floor_level": "07 to 09",
+    "flat_type": "4 ROOM",
+    "lease_commence_year": 2016,
+    "description": "Well-kept 4-room flat near Oasis LRT with efficient layout and young lease.",
+    "agent_name": "Melissa Goh",
+    "image_urls": ["https://images.shadowmarket.sg/punggol-1.jpg","https://images.shadowmarket.sg/punggol-2.jpg"]
+  },
+  "duplicates": [
+    {
+      "url": "https://mock.shadowmarket.sg/hdb/punggol-attractive-1",
+      "portal": "PropertyGuru",
+      "price": 620000,
+      "area_sqft": 1001,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agent_name": "Melissa Goh",
+      "image_urls": ["https://images.shadowmarket.sg/punggol-2.jpg"],
+      "listed_at": "2026-03-11",
+      "project_name": "",
+      "address_or_block": "172C Edgedale Plains",
+      "flat_type": "4 ROOM"
+    }
+  ],
+  "comparables": [
+    {
+      "url": "public://data-gov-sg/hdb/punggol-1",
+      "project_name_or_block": "172C Edgedale Plains",
+      "property_type": "hdb",
+      "price": 630000,
+      "area_sqft": 1001,
+      "psf": 629,
+      "match_type": "same_block",
+      "source": "data.gov.sg"
+    },
+    {
+      "url": "public://data-gov-sg/hdb/punggol-2",
+      "project_name_or_block": "Edgedale Plains",
+      "property_type": "hdb",
+      "price": 625000,
+      "area_sqft": 1001,
+      "psf": 624,
+      "match_type": "similar_layout",
+      "source": "HDB"
+    },
+    {
+      "url": "public://data-gov-sg/hdb/punggol-3",
+      "project_name_or_block": "Punggol Field",
+      "property_type": "hdb",
+      "price": 622000,
+      "area_sqft": 990,
+      "psf": 628,
+      "match_type": "nearby",
+      "source": "data.gov.sg"
+    }
+  ],
+  "source_summary": {
+    "listing_sources": ["99.co", "PropertyGuru"],
+    "public_data_sources": ["data.gov.sg HDB resale references"],
+    "notes": [
+      "Mock attractive HDB listing with young lease.",
+      "Scenario is designed to support a hold-price recommendation."
+    ]
+  }
+}

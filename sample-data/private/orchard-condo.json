@@ -1,0 +1,93 @@
+{
+  "id": "private-orchard-condo",
+  "label": "Private residential: Orchard condo relist",
+  "property_type": "private_residential",
+  "listing": {
+    "url": "https://mock.shadowmarket.sg/private/orchard-condo-11",
+    "portal": "99.co",
+    "property_type": "private_residential",
+    "project_name": "The Avenir",
+    "address_or_block": "8 River Valley Close",
+    "location": "River Valley",
+    "district_or_town": "D09",
+    "price": 3280000,
+    "currency": "SGD",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area_sqft": 1528,
+    "floor_level": "High floor",
+    "flat_type": "",
+    "lease_commence_year": null,
+    "description": "Bright 3-bed luxury unit near Great World MRT with renovated kitchen and river views.",
+    "agent_name": "Cheryl Tan",
+    "image_urls": [
+      "https://images.shadowmarket.sg/avenir-1.jpg",
+      "https://images.shadowmarket.sg/avenir-2.jpg"
+    ]
+  },
+  "duplicates": [
+    {
+      "url": "https://mock.shadowmarket.sg/private/avenir-relist-1",
+      "portal": "PropertyGuru",
+      "price": 3320000,
+      "area_sqft": 1528,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agent_name": "Cheryl Tan",
+      "image_urls": ["https://images.shadowmarket.sg/avenir-1.jpg"],
+      "listed_at": "2026-01-14",
+      "project_name": "The Avenir",
+      "address_or_block": "8 River Valley Close"
+    },
+    {
+      "url": "https://mock.shadowmarket.sg/private/avenir-relist-2",
+      "portal": "EdgeProp",
+      "price": 3298000,
+      "area_sqft": 1518,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agent_name": "Marcus Goh",
+      "image_urls": ["https://images.shadowmarket.sg/avenir-2.jpg"],
+      "listed_at": "2026-02-03",
+      "project_name": "Avenir",
+      "address_or_block": "River Valley Close"
+    }
+  ],
+  "comparables": [
+    {
+      "url": "public://ura/txn/avenir-1528-2026-02",
+      "project_name_or_block": "The Avenir",
+      "property_type": "private_residential",
+      "price": 3210000,
+      "area_sqft": 1507,
+      "psf": 2130,
+      "match_type": "same_project"
+    },
+    {
+      "url": "public://ura/txn/avenir-1496-2026-01",
+      "project_name_or_block": "The Avenir",
+      "property_type": "private_residential",
+      "price": 3175000,
+      "area_sqft": 1496,
+      "psf": 2122,
+      "match_type": "same_project"
+    },
+    {
+      "url": "https://mock.shadowmarket.sg/private/rv-comparable-1",
+      "project_name_or_block": "Irwell Hill Residences",
+      "property_type": "private_residential",
+      "price": 3030000,
+      "area_sqft": 1421,
+      "psf": 2132,
+      "match_type": "nearby"
+    }
+  ],
+  "source_summary": {
+    "listing_sources": ["99.co", "PropertyGuru", "EdgeProp"],
+    "public_data_sources": ["URA private residential transaction references"],
+    "notes": [
+      "Mock scenario models a likely relist chain across portals.",
+      "Private flow uses URA-oriented comparable framing."
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "private-queenstown-overpriced",
+  "label": "Private residential: overpriced stale listing",
+  "property_type": "private_residential",
+  "listing": {
+    "url": "https://mock.shadowmarket.sg/private/queenstown-overpriced-88",
+    "portal": "PropertyGuru",
+    "property_type": "private_residential",
+    "project_name": "Commonwealth Towers",
+    "address_or_block": "230 Commonwealth Avenue",
+    "location": "Queenstown",
+    "district_or_town": "D03",
+    "price": 2380000,
+    "currency": "SGD",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area_sqft": 915,
+    "floor_level": "Mid floor",
+    "flat_type": "",
+    "lease_commence_year": null,
+    "description": "Renovated 2-bed unit next to Queenstown MRT with city-fringe convenience.",
+    "agent_name": "Daniel Chua",
+    "image_urls": ["https://images.shadowmarket.sg/commonwealth-1.jpg","https://images.shadowmarket.sg/commonwealth-2.jpg"]
+  },
+  "duplicates": [
+    {
+      "url": "https://mock.shadowmarket.sg/private/commonwealth-relist-1",
+      "portal": "99.co",
+      "price": 2368000,
+      "area_sqft": 915,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agent_name": "Daniel Chua",
+      "image_urls": ["https://images.shadowmarket.sg/commonwealth-1.jpg"],
+      "listed_at": "2025-12-05",
+      "project_name": "Commonwealth Towers",
+      "address_or_block": "230 Commonwealth Avenue"
+    },
+    {
+      "url": "https://mock.shadowmarket.sg/private/commonwealth-relist-2",
+      "portal": "EdgeProp",
+      "price": 2340000,
+      "area_sqft": 904,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agent_name": "Daniel Chua",
+      "image_urls": ["https://images.shadowmarket.sg/commonwealth-2.jpg"],
+      "listed_at": "2026-01-09",
+      "project_name": "Commonwealth Towers",
+      "address_or_block": "Commonwealth Ave"
+    }
+  ],
+  "comparables": [
+    {
+      "url": "public://ura/txn/commonwealth-1",
+      "project_name_or_block": "Commonwealth Towers",
+      "property_type": "private_residential",
+      "price": 2140000,
+      "area_sqft": 915,
+      "psf": 2339,
+      "match_type": "same_project",
+      "source": "URA"
+    },
+    {
+      "url": "public://ura/txn/commonwealth-2",
+      "project_name_or_block": "Commonwealth Towers",
+      "property_type": "private_residential",
+      "price": 2095000,
+      "area_sqft": 893,
+      "psf": 2346,
+      "match_type": "same_project",
+      "source": "URA"
+    },
+    {
+      "url": "https://mock.shadowmarket.sg/private/queenstown-nearby-1",
+      "project_name_or_block": "Queens Peak",
+      "property_type": "private_residential",
+      "price": 2050000,
+      "area_sqft": 883,
+      "psf": 2322,
+      "match_type": "nearby",
+      "source": "99.co"
+    }
+  ],
+  "source_summary": {
+    "listing_sources": ["PropertyGuru", "99.co", "EdgeProp"],
+    "public_data_sources": ["URA private residential transaction references"],
+    "notes": [
+      "Mock stale private listing with multi-site exposure.",
+      "Scenario is designed to support a price-cut recommendation."
+    ]
+  }
+}

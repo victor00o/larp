@@ -1,0 +1,5 @@
+{
+  "name": "@shadow-market/backend",
+  "private": true,
+  "type": "module"
+}
